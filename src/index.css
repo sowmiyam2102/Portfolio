@@ -1,5 +1,37 @@
 @import "tailwindcss";
 
+@layer base {
+  body {
+    @apply bg-background text-textPrimary transition-colors duration-300;
+  }
+}
+
+@layer utilities {
+  /* Glassmorphism */
+  .glass {
+    @apply bg-cardBg backdrop-blur-md border border-border;
+    background: rgba(13, 10, 39, 0.55);
+  }
+
+  .text-primary {
+    color: var(--tw-color-textPrimary);
+  }
+
+  .text-muted {
+    color: var(--tw-color-textMuted);
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+
 @theme {
   /* Cyberpunk / Indigo-Violet Palette */
   --color-primary-50: #f5f3ff;

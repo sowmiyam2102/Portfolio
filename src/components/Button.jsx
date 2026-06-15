@@ -14,6 +14,11 @@ export default function Button({
   const baseStyles = 'inline-flex items-center justify-center gap-2 font-display font-medium text-sm rounded-xl px-5 py-3 transition-all duration-300 cursor-pointer outline-hidden focus:ring-2 focus:ring-violet-500/50';
   
   const variants = {
+  primary: 'bg-primary-500 hover:bg-primary-600 text-white border border-primary-400 shadow-md hover:shadow-lg transition-all',
+  secondary: 'bg-slate-900 hover:bg-slate-800 dark:bg-slate-800 dark:hover:bg-slate-700 text-white shadow-md border border-slate-800 dark:border-slate-700',
+  outline: 'bg-transparent border border-gray-300 dark:border-gray-800 hover:border-primary-500/50 text-slate-700 dark:text-slate-300 hover:text-primary-500 dark:hover:text-primary-400',
+  glow: 'bg-primary-500 hover:bg-primary-600 text-white shadow-lg relative overflow-hidden group',
+};
     primary: 'bg-violet-600 hover:bg-violet-700 text-white shadow-md shadow-violet-500/20 hover:shadow-lg hover:shadow-violet-500/35 border border-violet-400/20',
     secondary: 'bg-slate-900 hover:bg-slate-800 dark:bg-slate-800 dark:hover:bg-slate-700 text-white shadow-md border border-slate-800 dark:border-slate-700',
     outline: 'bg-transparent border border-gray-300 dark:border-gray-800 hover:border-violet-500/50 text-slate-700 dark:text-slate-300 hover:text-violet-500 dark:hover:text-violet-400',

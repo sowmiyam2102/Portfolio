@@ -6,7 +6,7 @@ import { Mail, MessageSquare, Phone, MapPin } from 'lucide-react';
 import { Github, Linkedin } from '../components/BrandIcons';
 
 export default function Contact() {
-  const { email, phone, location, github, linkedin } = portfolioData.personalInfo;
+  const { email, phone, github, linkedin } = portfolioData.personalInfo;
 
   // Mouse tracking and dynamic spark trail states
   const [mouse, setMouse] = useState({ x: -200, y: -200 });
@@ -52,7 +52,6 @@ export default function Contact() {
   const contactMethods = [
     { icon: Mail, label: 'Email', value: email, href: `mailto:${email}` },
     { icon: Phone, label: 'Phone', value: phone, href: `tel:${phone}` },
-    { icon: MapPin, label: 'Location', value: location, href: null },
     { icon: Github, label: 'GitHub', value: 'sowmiyam2102', href: github },
     { icon: Linkedin, label: 'LinkedIn', value: 'Sowmiya M', href: linkedin },
   ];

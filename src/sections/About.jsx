@@ -235,7 +235,7 @@ export default function About() {
                     return (
                       <div
                         key={idx}
-                        className="rounded-[20px] border border-violet-500/10 bg-slate-950/40 p-5 hover:border-violet-500/30 transition-all duration-300"
+                        className="rounded-[20px] border border-violet-500/20 bg-slate-950/40 p-5 hover:border-violet-600/60 transition-all duration-300"
                       >
                         <h4 className="font-semibold text-white mb-4">
                           {category.title}

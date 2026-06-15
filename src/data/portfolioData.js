@@ -220,22 +220,19 @@ export const portfolioData = {
     }
   ],
   certifications: [
-    { name: "Oracle Certified Generative AI Professional", issuer: "Oracle", year: "2024" },
-    { name: "NPTEL DBMS", issuer: "NPTEL (IIT)", year: "2023" },
-    { name: "Java & Full Stack", issuer: "Software Training Center", year: "2023" },
-    { name: "UI/UX Design", issuer: "Design Institute", year: "2023" },
-    { name: "CRM Certification", issuer: "Salesforce / Hubspot", year: "2023" }
+    { name: "Oracle Certified Generative AI Professional", issuer: "Oracle" },
+    { name: "NPTEL DBMS", issuer: "NPTEL" },
+    { name: "Java & Full Stack", issuer: "InLustro" },
+    { name: "UI/UX Design", issuer: "TVS Training" }
   ],
   achievements: [
     {
       title: "3rd Place at InLustro 2025",
-      description: "Awarded third place for the AI-Powered Water Quality Monitoring System out of hundreds of entries.",
-      year: "2025"
+      description: "Awarded third place for the AI-Powered Water Quality Monitoring System out of hundreds of entries."
     },
     {
       title: "Best Social Media Coordinator Award",
-      description: "Recognized for outstanding leadership, communication skills, and digital outreach execution during post-graduate activities.",
-      year: "2024"
+      description: "Recognized as best social media coordinator for handling photography, video editing and content creation for official college social media plaform."
     }
   ]
 };

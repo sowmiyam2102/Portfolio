@@ -132,33 +132,12 @@ export default function Projects() {
           </p>
         </div>
 
-        {/* Search Input matching your previous styling constants */}
-        <div className="relative w-full max-w-md mx-auto mb-16">
-          <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-500">
-            <Search className="w-4 h-4" />
-          </span>
-          <input
-            type="text"
-            placeholder="Search projects by title, tech stack, details..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-10 pr-12 py-2.5 rounded-xl border border-slate-800 bg-slate-900/40 text-sm text-white placeholder-slate-500 focus:outline-hidden focus:ring-2 focus:ring-violet-500/50 focus:border-violet-500/50 transition-all duration-300"
-          />
-          {searchQuery && (
-            <button
-              onClick={() => setSearchQuery('')}
-              className="absolute inset-y-0 right-0 pr-3.5 flex items-center text-xs text-slate-500 hover:text-white"
-            >
-              Clear
-            </button>
-          )}
-        </div>
+
 
         {/* FEATURED PROJECTS GRID */}
         {featuredProjects.length > 0 && (
           <div className="mb-20">
             <h3 className="text-2xl font-bold text-white mb-8 tracking-tight flex items-center gap-3 text-left">
-              <span className="w-2 h-2 rounded-full bg-violet-500 inline-block animate-pulse"></span>
               Featured Creations
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -175,7 +154,7 @@ export default function Projects() {
                       {project.images?.length > 0 ? (
                         <div className="w-full h-[220px] rounded-[18px] overflow-hidden bg-slate-900 mb-5 relative border border-slate-800">
                           <img
-                            src={`/${project.images[0]}`}
+                            src={`${import.meta.env.BASE_URL}${project.images[0]}`}
                             alt={project.title}
                             className="w-full h-full object-cover object-center"
                           />
@@ -323,7 +302,7 @@ export default function Projects() {
                 {selectedProject.images?.length > 0 ? (
                   <div className="w-full h-full flex flex-col justify-center items-center">
                     <img
-                      src={`/${selectedProject.images[currentImage]}`}
+                      src={`${import.meta.env.BASE_URL}${selectedProject.images[currentImage]}`}
                       alt={selectedProject.title}
                       className="max-w-full max-h-[260px] md:max-h-[380px] object-contain rounded-lg shadow-2xl"
                     />
@@ -335,7 +314,7 @@ export default function Projects() {
                             onClick={() => setCurrentImage(idx)}
                             className={`w-10 h-10 rounded border overflow-hidden flex-shrink-0 transition-all ${idx === currentImage ? 'border-violet-500 scale-105' : 'border-slate-800 opacity-60'}`}
                           >
-                            <img src={`/${img}`} alt="" className="w-full h-full object-cover" />
+                            <img src={`${import.meta.env.BASE_URL}${img}`} alt="" className="w-full h-full object-cover" />
                           </button>
                         ))}
                       </div>

@@ -12,7 +12,7 @@ export default function Hero() {
   const { scrollYProgress } = useScroll();
 
   // Typing animation roles
-  const roles = ["Full-Stack Developer", "Software Engineer", "MCA Graduate"];
+  const roles = ["Full-Stack Developer", "Software Engineer"];
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -244,7 +244,7 @@ export default function Hero() {
 
               {/* Resume */}
               <a
-                href="/SOWMIYA_M_Resume.pdf"
+                href={`${import.meta.env.BASE_URL}SOWMIYA_M_Resume.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2
