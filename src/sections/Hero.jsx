@@ -12,7 +12,7 @@ export default function Hero() {
   const { scrollYProgress } = useScroll();
 
   // Typing animation roles
-  const roles = ["Full-Stack Developer", "Software Engineer"];
+  const roles = ["Data Analyst", "BI & Visualization"];
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -244,7 +244,7 @@ export default function Hero() {
 
               {/* Resume */}
               <a
-                href={`${import.meta.env.BASE_URL}SOWMIYA_M_Resume.pdf`}
+                href={`${import.meta.env.BASE_URL}Sowmiyam-resume.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2
@@ -338,7 +338,7 @@ export default function Hero() {
                   Graduate
                 </p>
                 <span className="text-slate-400 text-sm">
-                  Full-Stack Developer
+                  Data Analytics & BI
                 </span>
               </div>
 
@@ -346,7 +346,7 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Floating Scroll Indicator */}
+        {/* Floating Scroll Indicator
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -367,7 +367,7 @@ export default function Hero() {
               className="w-1.5 h-1.5 rounded-full bg-violet-400 text-glow-violet"
             />
           </div>
-        </motion.div>
+        </motion.div> */}
       </section>
     </>
   );

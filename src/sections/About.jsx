@@ -71,19 +71,23 @@ export default function About() {
   const highlights = [
     {
       title: "Location",
-      detail: "Chennai, TN, India",
+      detail: "Chennai, India",
     },
     {
       title: "Focus",
-      detail: "Full-Stack Development",
+      detail: "Data Analytics & BI",
     },
     {
       title: "Passion",
-      detail: "Building Scalable Solutions",
+      detail: "Turning Data Into Insights",
     },
     {
       title: "Goal",
-      detail: "Create Impactful Products",
+      detail: "Building Data-Driven Solutions",
+    },
+    {
+      title: "Relocation",
+      detail: "Open to Hyderabad & Bengaluru",
     },
   ];
 
@@ -94,7 +98,7 @@ export default function About() {
     "Data Engineering": Cloud,
     "Analytics & BI": BarChart3,
     "Machine Learning": Brain,
-    "Tools & Platforms": Wrench,
+    "Development Tools": Wrench,
   };
 
   return (
@@ -176,38 +180,53 @@ export default function About() {
                 <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-violet-500/10">
                   <User className="w-6 h-6 text-violet-400" />
                 </div>
-
-                <h3 className="text-2xl font-bold text-white">
-                  About Me
-                </h3>
+                <h3 className="text-2xl font-bold text-white">About Me</h3>
               </div>
 
               <div className="h-px bg-gradient-to-r from-transparent via-violet-500 to-transparent mb-6" />
+
               <div className="flex flex-col gap-5 text-slate-400 leading-8 text-sm md:text-base text-justify">
                 {aboutSection.description.map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
               </div>
+
+              {/* The highlights MUST be inside the Card, before its closing tag */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+                {highlights.map((item) => (
+                  <motion.div
+                    key={item.title}
+                    whileHover={{ y: -5 }}
+                    className="min-h-[110px] rounded-[20px] border border-violet-500/10 bg-slate-950/40 p-4 flex flex-col justify-center items-center text-center hover:border-violet-500/30 transition-all duration-300"
+                  >
+                    <h4 className="text-white font-semibold text-base mb-3">
+                      {item.title}
+                    </h4>
+                    <p className="text-slate-400 text-sm leading-relaxed">
+                      {item.detail}
+                    </p>
+                  </motion.div>
+                ))}
+              </div>
             </Card>
 
-            {/* Quick Highlights */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {highlights.map((item, idx) => (
+            {/* Quick Highlights inside Bio Card
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-6">
+              {highlights.map((item) => (
                 <motion.div
-                  key={idx}
+                  key={item.title}
                   whileHover={{ y: -5 }}
-                  className="h-full min-h-[140px] rounded-[24px] border border-violet-500/10 bg-slate-950/40 backdrop-blur-xl p-4 flex flex-col justify-center items-center text-center transition-all duration-300 hover:border-violet-500/30 hover:shadow-[0_0_20px_rgba(139,92,246,0.15)]"
+                  className="min-h-[120px] rounded-[20px] border border-violet-500/10 bg-slate-950/40 p-4 flex flex-col justify-center items-center text-center transition-all duration-300 hover:border-violet-500/30 hover:shadow-[0_0_20px_rgba(139,92,246,0.15)]"
                 >
                   <h4 className="text-white font-semibold text-base mb-3">
                     {item.title}
                   </h4>
-
                   <p className="text-slate-400 text-sm leading-relaxed">
                     {item.detail}
                   </p>
                 </motion.div>
               ))}
-            </div>
+            </div> */}
           </motion.div>
 
           {/* Right Side: Skill Grid */}
@@ -230,7 +249,7 @@ export default function About() {
 
               <div className="grid md:grid-cols-2 gap-5">
                 {skillGroups
-                  .filter((category) => category.title !== "Tools & Platforms")
+                  .filter((category) => category.title !== "Development Tools")
                   .map((category, idx) => {
                     return (
                       <div
@@ -255,15 +274,15 @@ export default function About() {
                     );
                   })}
 
-                {/* Tools & Platforms Full Width */}
+                {/* Development Tools Full Width */}
                 <div className="md:col-span-2 rounded-[20px] border border-violet-500/10 bg-slate-950/40 p-5 hover:border-violet-500/30 transition-all duration-300">
                   <h4 className="font-semibold text-white mb-4">
-                    Tools & Platforms
+                    Development Tools
                   </h4>
 
                   <div className="flex flex-wrap gap-2">
                     {skillGroups
-                      .find((skill) => skill.title === "Tools & Platforms")
+                      .find((skill) => skill.title === "Development Tools")
                       ?.skills.map((skill, index) => (
                         <span
                           key={index}

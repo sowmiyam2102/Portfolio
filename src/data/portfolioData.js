@@ -3,73 +3,75 @@ import { image } from "framer-motion/client";
 export const portfolioData = {
   personalInfo: {
     name: "Sowmiya M",
-    title: "Full-Stack Developer",
+    title: "Data Analyst",
     location: "Chennai, India",
     email: "sowmiyam2102@gmail.com",
     phone: "+91 6374630969",
     github: "https://github.com/sowmiyam2102",
     linkedin: "https://linkedin.com/in/sowmiyam2102",
-    subTitle: "I build scalable web applications, REST APIs, and data-driven solutions. Passionate about creating software that solves real-world problems through clean architecture and modern technologies.",
+    subTitle: "Beyond the numbers lies the story. Turning data into clarity, patterns into perspectives, and insights into smarter decisions.",
     about: [
-      "I am an MCA graduate with hands-on experience in full-stack development, database management, data engineering, and software analytics. My technical expertise includes Java, Spring Boot, React.js, MySQL, PostgreSQL, Python, and REST API development.",
-      "Through academic projects and industry experience, I have built end-to-end applications, designed ETL pipelines, developed interactive dashboards, and integrated machine learning solutions. My projects range from AI-powered water quality monitoring systems to data pipelines and banking analytics dashboards.",
-      "I enjoy transforming complex business requirements into efficient, scalable, and user-friendly solutions. With a strong foundation in software engineering, data analytics, and problem-solving, I am continuously learning new technologies and seeking opportunities to build impactful digital products."
+      "I am an MCA graduate with 1 year and 2 months of internship experience in data analytics, working across banking, retail, and HR domains. My expertise includes SQL, Excel, Power BI, Tableau, Python, and ETL workflows, with a strong focus on data quality, validation, and meaningful business insights.",
+      "Through my internship and projects, I have worked with 10,000+ records, developed interactive dashboards, built data preparation workflows, and analysed datasets to identify trends and support decision-making. My projects include banking analytics using RBI datasets, retail sales and demand forecasting, and automated data pipelines.",
+      "I enjoy exploring data, uncovering patterns, and translating analytical findings into practical recommendations. I am continuously strengthening my analytical and technical skills, with the goal of helping organizations improve reporting, understand performance, and make better decisions through data."
     ],
-    resumeUrl: "/SOWMIYA_M_Resume.pdf"
+    resumeUrl: "/Sowmiyam-resume.pdf"
   }, aboutSection: {
     title: "About Me",
     description: [
-      "I'm a passionate Full-Stack Developer who enjoys building modern web applications, REST APIs, and data-driven solutions that solve real-world problems.",
+      "I am a data analytics professional with a strong foundation in SQL, Python, database management, and business intelligence. I enjoy exploring complex datasets, identifying meaningful patterns, and turning raw data into actionable insights that support better business decisions.",
 
-      "My expertise includes Java, Spring Boot, React.js, Python, MySQL, PostgreSQL, and modern development tools. I enjoy transforming complex requirements into clean, scalable, and user-friendly applications.",
+      "My technical expertise includes SQL, Excel, Power BI, Tableau, Python, MySQL, PostgreSQL, and ETL workflows. Through my internship and projects, I have gained hands-on experience in data validation, dashboard development, data preparation, and analysis across banking, retail, and HR domains.",
 
-      "Beyond software development, I have experience working with analytics, business intelligence, and machine learning solutions, enabling me to approach problems from both a development and data perspective.",
+      "Beyond analytics, my background in software development and data engineering helps me approach problems with a broader technical perspective. I enjoy building efficient workflows, improving data quality, and presenting findings through clear, interactive visualizations.",
 
-      "I am continuously learning new technologies and exploring innovative ways to create impactful digital products that deliver meaningful user experiences."
+      "I am continuously learning and refining my analytical skills, with the goal of transforming data into meaningful business insights and helping organizations make informed, data-driven decisions."
     ]
   }
   ,
   skillGroups: [
     {
-      title: "Frontend Development",
-      skills: ["React.js", "JavaScript", "HTML", "CSS"]
+      title: "Data Analytics & BI",
+      skills: ["SQL", "Excel", "Power BI", "Tableau", "Power Query", "DAX"]
     },
     {
-      title: "Backend Development",
-      skills: ["Java", "Spring Boot", "REST APIs", "Flask"]
+      title: "Programming & Data Processing",
+      skills: ["Python", "Pandas", "NumPy", "Data Cleaning", "Exploratory Data Analysis"]
     },
     {
       title: "Databases",
-      skills: ["MySQL", "PostgreSQL", "SQL"]
+      skills: ["MySQL", "PostgreSQL", "Database Management", "Query Optimization"]
     },
     {
-      title: "Data Engineering",
-      skills: ["Apache Airflow", "Docker", "ETL Pipelines"]
+      title: "ETL & Data Engineering",
+      skills: ["ETL Workflows", "Tableau Prep", "Apache Airflow", "Docker"]
     },
     {
-      title: "Analytics & BI",
-      skills: ["Power BI", "Tableau", "Excel", "Power Query"]
+      title: "Reporting & Data Quality",
+      skills: ["KPI Reporting", "Data Validation", "Data Quality", "Dashboard Development"]
     },
     {
       title: "Machine Learning",
-      skills: ["Python", "Scikit-Learn", "TensorFlow", "NLP"]
-    },
-    {
-      title: "Tools & Platforms",
-      skills: ["Git", "GitHub", "VS Code", "Postman", "Figma"]
+      skills: ["Scikit-learn", "TensorFlow", "NLP", "Predictive Analytics"]
+    }, {
+
+
+      title: "Development Tools",
+      skills: ["Git", "GitHub", "VS Code", "Java", "Spring Boot", "React.js", "REST APIs"]
     }
   ],
   experience: [
     {
+
       company: "Bilight Solutions",
-      role: "Student Intern",
+      role: "Data Analytics Intern",
       location: "Chennai",
       duration: "Feb 2025 – Apr 2026",
       description: [
-        "Processed and transformed large-scale datasets using Excel, MySQL, Tableau Prep, and Power Query, applying ETL techniques across HR, Retail, and Banking domains.",
-        "Developed interactive dashboards using Power BI and Tableau to improve business reporting and decision-making.",
-        "Performed Exploratory Data Analysis (EDA) on 1,000+ HR records.",
-        "Designed KPIs and banking performance metrics to analyze digital adoption across 50+ banks."
+        "Processed, transformed, and prepared datasets using Excel, MySQL, Tableau Prep, and Power Query, supporting ETL workflows across HR, Retail, and Banking domains.",
+        "Developed interactive Power BI and Tableau dashboards to visualize key metrics, improve reporting clarity, and support data-driven business decisions.",
+        "Conducted Exploratory Data Analysis (EDA) on 1,000+ HR records to identify patterns and generate workforce-related insights.",
+        "Defined KPIs and analysed banking performance metrics across 50+ banks to examine digital adoption trends and compare performance."
       ],
       technologies: [
         "Excel",
@@ -99,10 +101,47 @@ export const portfolioData = {
   projects: [
     {
       id: 1,
+      title: "Banking Systems and Performance Analysis Dashboard",
+      category: "Analytics & BI",
+      images: ["src/assets/bank/bank1.png", "src/assets/bank/bank2.png", "src/assets/bank/bank3.png"],
+      featured: true,
+      tech: ["Tableau", "Tableau Prep", "SQL", "Excel", "Power Query"],
+      description: "Analysed 40+ RBI datasets covering 50+ banks to examine banking performance, digital adoption, and transaction growth. Developed interactive Tableau dashboards to track KPIs, compare performance across banks, and communicate findings through data visualization.",
+      highlights: [
+        "40+ RBI Datasets Analysed",
+        "50+ Banks Covered",
+        "KPI Tracking and Performance Benchmarking",
+        "Digital Adoption Analysis",
+        "Transaction Growth Trends",
+        "Interactive Tableau Dashboards"
+      ],
+      githubUrl: "https://github.com/sowmiyam2102/Banking-Transaction-and-Infrastructure-Analysis-in-India"
+    },
+
+    {
+      id: 2,
+      title: "Retail Industry Data Analysis",
+      category: "Analytics & BI",
+      featured: true,
+      images: ["src/assets/retail/retail1.png"],
+      tech: ["MySQL", "SQL", "Power BI", "Python"],
+      description: "Analysed retail sales data to explore sales trends, customer behaviour, and product performance. Used SQL, Python, and Power BI to investigate demand patterns and identify opportunities for improved forecasting and inventory planning.",
+      highlights: [
+        "Retail Sales Analysis",
+        "Customer Behaviour Insights",
+        "Product Performance Analysis",
+        "Demand Pattern Exploration",
+        "Power BI Data Visualization",
+        "Inventory Planning Opportunities"
+      ]
+    },
+
+    {
+      id: 3,
       title: "AI-Powered Water Quality Monitoring System",
       category: "Full Stack",
-      featured: true,
-      images: ["waterproject/water1.jpeg", "waterproject/water2.jpeg", "waterproject/water3.jpeg", "waterproject/water4.jpeg", "waterproject/water5.jpeg", "waterproject/water6.jpeg", "waterproject/water7.jpeg"],
+      featured: false,
+      images: ["src/assets/waterproject/water1.jpeg", "src/assets/waterproject/water2.jpeg", "src/assets/waterproject/water3.jpeg", "src/assets/waterproject/water4.jpeg", "src/assets/waterproject/water5.jpeg", "src/assets/waterproject/water6.jpeg", "src/assets/waterproject/water7.jpeg"],
       subCategory: "Full Stack + Machine Learning",
       tech: ["Java", "Spring Boot", "React.js", "Flask", "MySQL", "REST APIs", "TensorFlow"],
       description: "Developed a full-stack water quality prediction platform combining Spring Boot APIs, Flask-based machine learning services, React frontend, and MySQL database. The system analyzes water quality parameters and predicts potability in real time.",
@@ -118,11 +157,11 @@ export const portfolioData = {
       githubUrl: "https://github.com/sowmiyam2102/AI-Powered-water-quality"
     },
     {
-      id: 2,
+      id: 4,
       title: "Crypto Data Pipeline and Power BI Dashboard",
       category: "Data Engineering",
-      featured: true,
-      images: ["crypto/image.png"],
+      featured: false,
+      images: ["src/assets/crypto/image.png"],
       tech: ["Python", "PostgreSQL", "Docker", "Apache Airflow", "Power BI"],
       description: "Designed and implemented a Bronze–Silver–Gold data pipeline architecture for cryptocurrency analytics. Automated ETL workflows, feature engineering, machine learning prediction, and Power BI reporting.",
       highlights: [
@@ -136,43 +175,11 @@ export const portfolioData = {
       githubUrl: "https://github.com/sowmiyam2102/crypto-data-pipeline"
     },
     {
-      id: 3,
-      title: "Banking Systems and Performance Analysis Dashboard",
-      category: "Analytics & BI",
-      images: ["bank/bank1.png", "bank/bank2.png", "bank/bank3.png"],
-      featured: false,
-      tech: ["Tableau", "Tableau Prep", "SQL", "Excel", "Power Query"],
-      description: "Analyzed 40+ RBI datasets covering 50+ banks and built interactive dashboards for performance monitoring, digital adoption analysis, transaction growth tracking, and banking benchmarking.",
-      highlights: [
-        "Business Intelligence",
-        "KPI Monitoring",
-        "Tableau Dashboards",
-        "Banking Analytics",
-        "Performance Benchmarking"
-      ],
-      githubUrl: "https://github.com/sowmiyam2102/Banking-Transaction-and-Infrastructure-Analysis-in-India"
-    },
-    {
-      id: 4,
-      title: "Retail Industry Data Analysis",
-      category: "Analytics & BI",
-      featured: false,
-      images: ["retail/retail1.png"],
-      tech: ["MySQL", "SQL", "Power BI", "Python"],
-      description: "Analyzed retail sales datasets using MySQL, SQL, Power BI, and predictive analytics to identify customer behavior, sales trends, product performance, and demand forecasting opportunities.",
-      highlights: [
-        "Customer Behavior Insights",
-        "Sales Trend Forecasting",
-        "Product Performance Benchmarks",
-        "Demand Optimization"
-      ]
-    },
-    {
       id: 5,
       title: "Mystery Script Game",
       category: "Mobile Development",
       subCategory: "Android Application",
-      images: ["android/mobile1.png", "android/mobile2.png"],
+      images: ["src/assets/android/mobile1.png", "src/assets/android/mobile2.png"],
       featured: false,
       tech: ["Java", "Android Studio", "XML"],
       description: "Developed a detective-themed Android application featuring quizzes, image-based clue analysis, score tracking, timers, level progression, and immersive gameplay mechanics.",
@@ -191,7 +198,7 @@ export const portfolioData = {
       title: "AI & Text Detection",
       category: "Machine Learning",
       featured: false,
-      images: ["aitext/aitext1.png"],
+      images: ["src/assets/aitext/aitext1.png"],
       tech: ["Python", "NLP", "Scikit-learn", "Pandas"],
       description: "Built a machine learning and NLP solution to classify AI-generated and human-written text using TF-IDF vectorization, Logistic Regression, and Random Forest algorithms.",
       highlights: [
@@ -207,7 +214,7 @@ export const portfolioData = {
       title: "Epiphany UI/UX",
       category: "UI/UX",
       featured: false,
-      images: ["uiux/ui1.png", "uiux/ui2.png", "uiux/ui3.png", "uiux/ui4.png", "uiux/ui5.png", "uiux/ui6.png", "uiux/ui7.png", "uiux/ui8.png", "uiux/ui9.png"],
+      images: ["src/assets/uiux/ui1.png", "src/assets/uiux/ui2.png", "src/assets/uiux/ui3.png", "src/assets/uiux/ui4.png", "src/assets/uiux/ui5.png", "src/assets/uiux/ui6.png", "src/assets/uiux/ui7.png", "src/assets/uiux/ui8.png", "src/assets/uiux/ui9.png"],
       tech: ["Figma", "UI Design", "UX Design", "Prototyping"],
       description: "Designed a reader-and-writer platform featuring content discovery, bookmarking, personalized reading experiences, creator dashboards, and monetization workflows.",
       highlights: [

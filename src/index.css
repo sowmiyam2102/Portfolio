@@ -2,14 +2,14 @@
 
 @layer base {
   body {
-    @apply bg-background text-textPrimary transition-colors duration-300;
+    @apply bg-[#050505] text-[#F5F5F5] transition-colors duration-300;
   }
 }
 
 @layer utilities {
   /* Glassmorphism */
   .glass {
-    @apply bg-cardBg backdrop-blur-md border border-border;
+    @apply bg-[#101311] backdrop-blur-md border border-[#1D241F];
     background: rgba(13, 10, 39, 0.55);
   }
 
