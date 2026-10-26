@@ -1,5 +1,3 @@
-import { image } from "framer-motion/client";
-
 export const portfolioData = {
   personalInfo: {
     name: "Sowmiya M",
@@ -103,7 +101,7 @@ export const portfolioData = {
       id: 1,
       title: "Banking Systems and Performance Analysis Dashboard",
       category: "Analytics & BI",
-      images: ["src/assets/bank/bank1.png", "src/assets/bank/bank2.png", "src/assets/bank/bank3.png"],
+      images: ["projects/bank/bank1.png", "projects/bank/bank2.png", "projects/bank/bank3.png"],
       featured: true,
       tech: ["Tableau", "Tableau Prep", "SQL", "Excel", "Power Query"],
       description: "Analysed 40+ RBI datasets covering 50+ banks to examine banking performance, digital adoption, and transaction growth. Developed interactive Tableau dashboards to track KPIs, compare performance across banks, and communicate findings through data visualization.",
@@ -123,7 +121,7 @@ export const portfolioData = {
       title: "Retail Industry Data Analysis",
       category: "Analytics & BI",
       featured: true,
-      images: ["src/assets/retail/retail1.png"],
+      images: ["projects/retail/retail1.png"],
       tech: ["MySQL", "SQL", "Power BI", "Python"],
       description: "Analysed retail sales data to explore sales trends, customer behaviour, and product performance. Used SQL, Python, and Power BI to investigate demand patterns and identify opportunities for improved forecasting and inventory planning.",
       highlights: [
@@ -141,7 +139,7 @@ export const portfolioData = {
       title: "AI-Powered Water Quality Monitoring System",
       category: "Full Stack",
       featured: false,
-      images: ["src/assets/waterproject/water1.jpeg", "src/assets/waterproject/water2.jpeg", "src/assets/waterproject/water3.jpeg", "src/assets/waterproject/water4.jpeg", "src/assets/waterproject/water5.jpeg", "src/assets/waterproject/water6.jpeg", "src/assets/waterproject/water7.jpeg"],
+      images: ["projects/waterproject/water1.jpeg", "projects/waterproject/water2.jpeg", "projects/waterproject/water3.jpeg", "projects/waterproject/water4.jpeg", "projects/waterproject/water5.jpeg", "projects/waterproject/water6.jpeg", "projects/waterproject/water7.jpeg"],
       subCategory: "Full Stack + Machine Learning",
       tech: ["Java", "Spring Boot", "React.js", "Flask", "MySQL", "REST APIs", "TensorFlow"],
       description: "Developed a full-stack water quality prediction platform combining Spring Boot APIs, Flask-based machine learning services, React frontend, and MySQL database. The system analyzes water quality parameters and predicts potability in real time.",
@@ -161,7 +159,7 @@ export const portfolioData = {
       title: "Crypto Data Pipeline and Power BI Dashboard",
       category: "Data Engineering",
       featured: false,
-      images: ["src/assets/crypto/image.png"],
+      images: ["projects/crypto/image.png"],
       tech: ["Python", "PostgreSQL", "Docker", "Apache Airflow", "Power BI"],
       description: "Designed and implemented a Bronze–Silver–Gold data pipeline architecture for cryptocurrency analytics. Automated ETL workflows, feature engineering, machine learning prediction, and Power BI reporting.",
       highlights: [
@@ -179,7 +177,7 @@ export const portfolioData = {
       title: "Mystery Script Game",
       category: "Mobile Development",
       subCategory: "Android Application",
-      images: ["src/assets/android/mobile1.png", "src/assets/android/mobile2.png"],
+      images: ["projects/android/mobile1.png", "projects/android/mobile2.png"],
       featured: false,
       tech: ["Java", "Android Studio", "XML"],
       description: "Developed a detective-themed Android application featuring quizzes, image-based clue analysis, score tracking, timers, level progression, and immersive gameplay mechanics.",
@@ -198,7 +196,7 @@ export const portfolioData = {
       title: "AI & Text Detection",
       category: "Machine Learning",
       featured: false,
-      images: ["src/assets/aitext/aitext1.png"],
+      images: ["projects/aitext/aitext1.png"],
       tech: ["Python", "NLP", "Scikit-learn", "Pandas"],
       description: "Built a machine learning and NLP solution to classify AI-generated and human-written text using TF-IDF vectorization, Logistic Regression, and Random Forest algorithms.",
       highlights: [
@@ -214,7 +212,7 @@ export const portfolioData = {
       title: "Epiphany UI/UX",
       category: "UI/UX",
       featured: false,
-      images: ["src/assets/uiux/ui1.png", "src/assets/uiux/ui2.png", "src/assets/uiux/ui3.png", "src/assets/uiux/ui4.png", "src/assets/uiux/ui5.png", "src/assets/uiux/ui6.png", "src/assets/uiux/ui7.png", "src/assets/uiux/ui8.png", "src/assets/uiux/ui9.png"],
+      images: ["projects/uiux/ui1.png", "projects/uiux/ui2.png", "projects/uiux/ui3.png", "projects/uiux/ui4.png", "projects/uiux/ui5.png", "projects/uiux/ui6.png", "projects/uiux/ui7.png", "projects/uiux/ui8.png", "projects/uiux/ui9.png"],
       tech: ["Figma", "UI Design", "UX Design", "Prototyping"],
       description: "Designed a reader-and-writer platform featuring content discovery, bookmarking, personalized reading experiences, creator dashboards, and monetization workflows.",
       highlights: [

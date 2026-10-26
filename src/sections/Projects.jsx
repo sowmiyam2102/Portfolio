@@ -4,6 +4,20 @@ import { portfolioData } from '../data/portfolioData';
 import { Code2, Search, Layers } from 'lucide-react';
 import { Github } from '../components/BrandIcons';
 
+const getImageUrl = (imagePath) => {
+  if (!imagePath) return '';
+  if (imagePath.startsWith('http://') || imagePath.startsWith('https://')) {
+    return imagePath;
+  }
+  let cleanPath = imagePath.startsWith('/') ? imagePath.slice(1) : imagePath;
+  if (cleanPath.startsWith('src/assets/')) {
+    cleanPath = 'projects/' + cleanPath.replace('src/assets/', '');
+  }
+  const base = import.meta.env.BASE_URL || '/';
+  const cleanBase = base.endsWith('/') ? base : `${base}/`;
+  return `${cleanBase}${cleanPath}`;
+};
+
 export default function Projects() {
   const [searchQuery, setSearchQuery] = useState('');
   const [currentImage, setCurrentImage] = useState(0);
@@ -154,7 +168,7 @@ export default function Projects() {
                       {project.images?.length > 0 ? (
                         <div className="w-full h-[220px] rounded-[18px] overflow-hidden bg-slate-900 mb-5 relative border border-slate-800">
                           <img
-                            src={`${import.meta.env.BASE_URL}${project.images[0]}`}
+                            src={getImageUrl(project.images[0])}
                             alt={project.title}
                             className="w-full h-full object-cover object-center"
                           />
@@ -302,7 +316,7 @@ export default function Projects() {
                 {selectedProject.images?.length > 0 ? (
                   <div className="w-full h-full flex flex-col justify-center items-center">
                     <img
-                      src={`${import.meta.env.BASE_URL}${selectedProject.images[currentImage]}`}
+                      src={getImageUrl(selectedProject.images[currentImage])}
                       alt={selectedProject.title}
                       className="max-w-full max-h-[260px] md:max-h-[380px] object-contain rounded-lg shadow-2xl"
                     />
@@ -314,7 +328,7 @@ export default function Projects() {
                             onClick={() => setCurrentImage(idx)}
                             className={`w-10 h-10 rounded border overflow-hidden flex-shrink-0 transition-all ${idx === currentImage ? 'border-violet-500 scale-105' : 'border-slate-800 opacity-60'}`}
                           >
-                            <img src={`${import.meta.env.BASE_URL}${img}`} alt="" className="w-full h-full object-cover" />
+                            <img src={getImageUrl(img)} alt="" className="w-full h-full object-cover" />
                           </button>
                         ))}
                       </div>
